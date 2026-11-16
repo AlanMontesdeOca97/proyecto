@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Ubicación | Historias que Previenen</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="bootstrap/css/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="bootstrap/css/bootstrap-font.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap/css/estilosContacto.css">
+</head>
+<body>
+
+  <!-- NAVBAR (Idéntica a index.html con logo incluido) -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="img/logo-cecytem.jpeg" alt="Logo CECyTEM" height="45" onerror="this.style.display='none'">
+        <div>
+          <span class="fw-bold d-block lh-1" style="color: var(--primary-teal);">Historias que previenen</span>
+          <small class="text-muted" style="font-size: 0.72rem;">CECyTEM Plantel Tenango del Valle</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#cortometrajes">Cortometrajes</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#informacion">Prevención y Salud</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#estadisticas">Estadísticas</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ENCABEZADO DE SECCIÓN -->
+  <header class="page-header">
+    <div class="container">
+      <span class="badge rounded-pill px-3 py-2 mb-2 fw-semibold" style="background-color: var(--soft-mint); color: var(--primary-dark);">
+        <i class="bi bi-chat-dots-fill me-1"></i> Atención y Orientación
+      </span>
+      <h1 class="fw-bold mb-2">Contáctanos</h1>
+      <p class="text-secondary mb-0" style="max-width: 650px;">
+        ¿Tienes dudas sobre salud sexual, métodos anticonceptivos o quieres compartir tu opinión sobre los cortometrajes? Escríbenos o acércate al área de orientación de nuestro plantel.
+      </p>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL: FORMULARIO Y MAPA -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        
+        <!-- COLUMNA IZQUIERDA: FORMULARIO DE CONTACTO -->
+        <div class="col-lg-6">
+          <div class="custom-card p-4 p-md-5 h-100">
+            <h3 class="fw-bold mb-1">Envíanos un mensaje</h3>
+            <p class="text-muted small mb-4">Completa los siguientes datos. Tu información se maneja de forma respetuosa y confidencial.</p>
+
+            <!-- Alerta dinámica de confirmación (oculta por defecto) -->
+            <div id="alertaEnvio" class="alert alert-success d-none rounded-3 align-items-center" role="alert">
+              <i class="bi bi-check-circle-fill fs-5 me-2"></i>
+              <div>
+                <strong>¡Mensaje enviado con éxito!</strong> Pronto nos pondremos en contacto contigo.
+              </div>
+            </div>
+
+            <form id="formContacto" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-semibold small">Nombre completo (o alias)</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light"><i class="bi bi-person text-muted"></i></span>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ej. Ana López" required>
+                  <div class="invalid-feedback">Por favor, ingresa tu nombre o un alias.</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="correo" class="form-label fw-semibold small">Correo electrónico</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light"><i class="bi bi-envelope text-muted"></i></span>
+                  <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required>
+                  <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="telefono" class="form-label fw-semibold small">Teléfono <span class="text-muted fw-normal">(opcional)</span></label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light"><i class="bi bi-telephone text-muted"></i></span>
+                  <input type="tel" class="form-control" id="telefono" placeholder="722 000 0000" pattern="[0-9\s\-]{10,15}">
+                  <div class="invalid-feedback">Ingresa un número telefónico válido a 10 dígitos.</div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="mensaje" class="form-label fw-semibold small">Motivo de contacto o consulta</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe aquí tu duda, sugerencia o comentario sobre el proyecto..." required></textarea>
+                <div class="invalid-feedback">Por favor, escribe un breve mensaje.</div>
+              </div>
+
+              <button type="submit" class="btn btn-teal w-100">
+                <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: UBICACIÓN TENANGO DEL VALLE -->
+        <div class="col-lg-6">
+          <div class="custom-card p-4 p-md-5 h-100 d-flex flex-column">
+            <h3 class="fw-bold mb-1">Nuestra ubicación</h3>
+            <p class="text-muted small mb-3">Visítanos en nuestro plantel educativo en Tenango del Valle.</p>
+
+            <!-- Tarjeta de dirección -->
+            <div class="d-flex align-items-start gap-3 p-3 rounded-3 mb-3" style="background-color: #f1f5f9;">
+              <i class="bi bi-geo-alt-fill fs-4" style="color: var(--primary-teal);"></i>
+              <div class="small">
+                <strong class="d-block text-dark">CECyTEM Plantel Tenango del Valle</strong>
+                <span class="text-secondary">Av. de la Independencia S/N, Col. La Soya, C.P. 52303, Tenango de Arista, Tenango del Valle, Méx.</span>
+              </div>
+            </div>
+
+            <!-- Mapa responsivo centrado en CECyTEM Tenango del Valle -->
+            <div class="map-wrapper flex-grow-1" style="min-height: 300px;">
+              <iframe 
+                src="https://www.google.com/maps?q=CECyTEM+Plantel+Tenango+del+Valle,+Av.+de+la+Independencia,+Tenango+de+Arista,+Estado+de+Mexico&output=embed" 
+                width="100%" 
+                height="100%" 
+                style="border:0; min-height: 300px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación CECyTEM Plantel Tenango del Valle">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary">
+        <div class="col-md-5">
+          <h5 class="text-white fw-bold">Historias que previenen</h5>
+          <p class="small text-secondary">
+            La maternidad y paternidad son decisiones que requieren madurez y apoyo. Infórmate, cuídate y construye tu proyecto de vida con responsabilidad.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="text-white fw-bold">Recursos Oficiales</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="https://edomex.gob.mx/" target="_blank" class="text-decoration-none text-info">Gobierno del Estado de México</a></li>
+            <li class="mb-2"><a href="https://www.gob.mx/" target="_blank" class="text-decoration-none text-info">Gobierno de México • Salud Sexual</a></li>
+            <li><a href="index.html" class="text-decoration-none text-info">Volver a la página principal</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 text-md-end">
+          <span class="badge bg-success px-3 py-2 mb-2">CECyTEM Tenango del Valle</span>
+          <p class="small text-secondary mb-0">Semestre 2026 - 2027</p>
+        </div>
+      </div>
+      <div class="text-center pt-3 small text-secondary">
+        © 2026 Historias que previenen • Proyecto Escolar Comunitario. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL INICIAR SESIÓN -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Acceso Estudiantil / Docente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Correo institucional</label>
+              <input type="email" class="form-control" placeholder="ejemplo@cecytem.mx" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Contraseña</label>
+              <input type="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-teal w-100">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + Validación de Formulario -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const formContacto = document.getElementById('formContacto');
+    const alertaEnvio = document.getElementById('alertaEnvio');
+
+    formContacto.addEventListener('submit', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (formContacto.checkValidity()) {
+        // Mostrar mensaje de éxito
+        alertaEnvio.classList.remove('d-none');
+        alertaEnvio.classList.add('d-flex');
+        
+        // Limpiar formulario y quitar clases de validación
+        formContacto.reset();
+        formContacto.classList.remove('was-validated');
+
+        // Ocultar alerta automáticamente después de 5 segundos
+        setTimeout(() => {
+          alertaEnvio.classList.add('d-none');
+          alertaEnvio.classList.remove('d-flex');
+        }, 5000);
+      } else {
+        formContacto.classList.add('was-validated');
+      }
+    });
+  </script>
+</body>
+</html>

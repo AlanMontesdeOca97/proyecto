@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historias que Previenen | CECyTEM Tenango del Valle</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="bootstrap/css/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="bootstrap/css/bootstrap-font.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap/css/estilosIndex.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="img/logo-cecytem.jpeg" alt="Logo CECyTEM" height="45" onerror="this.style.display='none'">
+        <div>
+          <span class="fw-bold d-block lh-1" style="color: var(--primary-teal);">Historias que previenen</span>
+          <small class="text-muted" style="font-size: 0.72rem;">CECyTEM Plantel Tenango del Valle</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cortometrajes">Cortometrajes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#informacion">Prevención y Salud</a></li>
+          <li class="nav-item"><a class="nav-link" href="#estadisticas">Estadísticas</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="inicio" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="badge-pec d-inline-block mb-3">
+            <i class="bi bi-heart-pulse me-1"></i> Proyecto Escolar Comunitario (PEC) • 3er Semestre
+          </span>
+          <h1 class="display-5 fw-bold mb-3">Aprende con nosotros para prevenir y diseñar tu futuro</h1>
+          <p class="lead text-secondary mb-4">
+            Un espacio creado por y para estudiantes con información confiable, cortometrajes educativos y herramientas de autocuidado sobre salud sexual y reproductiva.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#cortometrajes" class="btn btn-teal">
+              <i class="bi bi-play-circle me-2"></i>Ver Cortometrajes
+            </a>
+            <a href="#informacion" class="btn btn-outline-dark rounded-3 px-4 py-2 fw-semibold">
+              Explorar Guía Informativa
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="custom-card p-4 bg-white">
+            <i class="bi bi-shield-check text-success" style="font-size: 4rem;"></i>
+            <h4 class="mt-3 fw-bold">Decisiones Informadas</h4>
+            <p class="text-muted small mb-0">
+              Rompemos tabúes mediante el diálogo abierto, la corresponsabilidad social y el acceso a orientación profesional sin prejuicios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN: CORTOMETRAJES (NUEVA - CUMPLIENDO EL PROPÓSITO DEL PEC) -->
+  <section id="cortometrajes" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-uppercase fw-bold small" style="color: var(--primary-teal);">Producción Estudiantil</span>
+        <h2 class="fw-bold mt-1">Cortometrajes que Previenen</h2>
+        <p class="text-muted mx-auto" style="max-width: 650px;">
+          Historias reales y reflexiones creadas por alumnos de tercer semestre para concientizar sobre el proyecto de vida y la prevención.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Corto 1 -->
+        <div class="col-md-4">
+          <div class="custom-card h-100">
+            <div class="video-thumb" onclick="abrirVideo('Un paso a tiempo', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
+              <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+            </div>
+            <div class="p-4">
+              <span class="badge bg-success-subtle text-success mb-2">Proyecto de Vida</span>
+              <h5 class="fw-bold">Un paso a tiempo</h5>
+              <p class="text-muted small mb-0">Reflexión sobre cómo la falta de comunicación en casa puede cambiar los planes académicos de dos jóvenes.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Corto 2 -->
+        <div class="col-md-4">
+          <div class="custom-card h-100">
+            <div class="video-thumb" onclick="abrirVideo('Mitos vs. Realidad', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
+              <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+            </div>
+            <div class="p-4">
+              <span class="badge bg-info-subtle text-info-emphasis mb-2">Salud Sexual e ITS</span>
+              <h5 class="fw-bold">Mitos vs. Realidad</h5>
+              <p class="text-muted small mb-0">Desmintiendo creencias erróneas sobre los métodos anticonceptivos y la prevención de infecciones.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Corto 3 -->
+        <div class="col-md-4">
+          <div class="custom-card h-100">
+            <div class="video-thumb" onclick="abrirVideo('Hablemos claro', 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
+              <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+            </div>
+            <div class="p-4">
+              <span class="badge bg-warning-subtle text-warning-emphasis mb-2">Corresponsabilidad</span>
+              <h5 class="fw-bold">Hablemos claro</h5>
+              <p class="text-muted small mb-0">La importancia de acudir a los servicios amigables de salud de manera confidencial y segura.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: INFORMACIÓN CLAVE Y CONTEXTO LOCAL -->
+  <section id="informacion" class="py-5 bg-white border-top border-bottom">
+    <div class="container justify-content-center">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-6">
+          <div class="custom-card p-4 h-100 border-start border-4 border-success">
+             <img src="img/enbarazoadolecente.jpg" 
+                 alt="¿Qué es el embarazo adolescente?" 
+                 class="img-fluid rounded-3 mb-3" 
+                 style="max-height: 220px; object-fit: contain;">
+            <h3 class="fw-bold mb-3">¿Qué es el embarazo adolescente?</h3>
+            <p class="text-secondary">
+              También conocido como embarazo precoz, ocurre en mujeres adolescentes de entre <strong>10 y 19 años</strong> (OMS, 2024). Se considera un reto prioritario de salud pública debido a que el organismo aún está en desarrollo, implicando riesgos físicos, emocionales y sociales.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="custom-card p-4 h-100 border-start border-4 border-primary">
+            <img src="img/tenango.jpg" 
+                 alt="Nuestro entorno: Tenango del Valle" 
+                 class="img-fluid rounded-3 mb-3" 
+                 style="max-height: 220px; object-fit: contain;">
+            <h3 class="fw-bold mb-3">Nuestro entorno: Tenango del Valle</h3>
+            <p class="text-secondary">
+              En nuestra comunidad escolar observamos que los tabúes familiares y el temor a pedir orientación limitan el acceso confidencial a métodos anticonceptivos, provocando deserción escolar y afectando el proyecto de vida de las y los jóvenes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PESTAÑAS INTERACTIVAS: ANTICONCEPTIVOS E ITS -->
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Guía de Autocuidado y Prevención</h2>
+        <p class="text-muted">Selecciona una categoría para conocer información verificada.</p>
+      </div>
+
+      <ul class="nav nav-pills justify-content-center mb-4 gap-2" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-pill px-4" data-bs-toggle="pill" data-bs-target="#tab-corta" type="button">Corta Duración y Barrera</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4" data-bs-toggle="pill" data-bs-target="#tab-larga" type="button">Larga Duración (LARCs)</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4" data-bs-toggle="pill" data-bs-target="#tab-its" type="button">Prevención de ITS</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="pills-tabContent">
+        <!-- Tab 1: Corta duración -->
+        <div class="tab-pane fade show active" id="tab-corta">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="custom-card p-4 h-100">
+                <img src="img/condones.jpg" 
+                 alt="Condón Masculino y Femenino" 
+                 class="img-fluid rounded-3 mb-3" 
+                 style="max-height: 220px; object-fit: contain;">
+                <h5 class="fw-bold text-success">Condón Masculino y Femenino</h5>
+                <p class="small text-muted mb-0">Método de barrera con 85% a 98% de efectividad. <strong>Es el único método que ofrece doble protección</strong>: previene embarazos e Infecciones de Transmisión Sexual (ITS).</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="custom-card p-4 h-100">
+                <img src="img/pildoras.jpeg" 
+                 alt="Decisiones Informadas" 
+                 class="img-fluid rounded-3 mb-3" 
+                 style="max-height: 220px; object-fit: contain;">
+                <h5 class="fw-bold text-success">Píldoras Anticonceptivas</h5>
+                <p class="small text-muted mb-0">Hormonas orales de toma diaria que inhiben la ovulación. Requieren valoración médica previa para elegir la dosis adecuada.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="custom-card p-4 h-100">
+                <img src="img/parche.jpeg" 
+                 alt="Parche e Inyección" 
+                 class="img-fluid rounded-3 mb-3" 
+                 style="max-height: 220px; object-fit: contain;">
+                <h5 class="fw-bold text-success">Parche e Inyección</h5>
+                <p class="small text-muted mb-0">Liberan hormonas de forma semanal (parche) o mensual/trimestral (inyección). No protegen contra ITS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Larga duración -->
+        <div class="tab-pane fade" id="tab-larga">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="custom-card p-4 h-100">
+                <img src="img/implante.jpeg" 
+                 alt="Implante Subdérmico" 
+                 class="img-fluid rounded-3 mb-3" 
+                 style="max-height: 220px; object-fit: contain;">
+                <h5 class="fw-bold text-primary">Implante Subdérmico</h5>
+                <p class="small text-muted mb-0">Varilla flexible colocada bajo la piel del brazo por personal médico. Efectividad superior al 99% con duración de 3 a 5 años.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="custom-card p-4 h-100">
+                <img src="img/diu.png" 
+                 alt="DIU" 
+                 class="img-fluid rounded-3 mb-3" 
+                 style="max-height: 220px; object-fit: contain;">
+                <h5 class="fw-bold text-primary">DIU (Hormonal o de Cobre)</h5>
+                <p class="small text-muted mb-0">Dispositivo intrauterino reversible de alta eficacia (99%) que brinda protección de 5 hasta 10 años según el tipo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: ITS -->
+        <div class="tab-pane fade" id="tab-its">
+          <div class="custom-card p-4">
+            <h5 class="fw-bold text-danger mb-2"><i class="bi bi-exclamation-triangle-fill me-2"></i>¿Por qué hablar de ITS?</h5>
+            <p class="small text-secondary mb-2">
+              Las Infecciones de Transmisión Sexual (como VPH, Clamidia, Gonorrea, Sífilis o VIH) pueden adquirirse sin presentar síntomas visibles al inicio.
+            </p>
+            <ul class="small text-secondary mb-0">
+              <li>Usa preservativo en cada relación sexual (oral, vaginal o anal).</li>
+              <li>Acude a los <strong>Servicios Amigables de Salud</strong> de tu centro de salud más cercano: son gratuitos y confidenciales para adolescentes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: ESTADÍSTICAS -->
+  <section id="estadisticas" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <span class="text-uppercase fw-bold small" style="color: var(--primary-teal);">Panorama Nacional</span>
+          <h2 class="fw-bold mt-1 mb-3">Contexto y Estadísticas</h2>
+          <p class="text-secondary">
+            Aunque en México la tasa de fecundidad adolescente descendió de <strong>70.6 a 45.2</strong> nacimientos por cada 1,000 mujeres de 15 a 19 años (INEGI, 2023), el <strong>16.7%</strong> de todos los nacimientos del país siguen ocurriendo en madres menores de 20 años.
+          </p>
+          <div class="alert alert-success border-0 rounded-4 small">
+            <strong>Dato clave:</strong> En 2024 se registraron más de 101,000 nacimientos en madres de 10 a 17 años (~277 diarios). El 23.3% señaló que no deseaba el embarazo en ese momento.
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="chart-container shadow">
+            <h5 class="text-white fw-bold mb-1">Embarazo Adolescente en México (2006 - 2026)</h5>
+            <p class="text-secondary small mb-4">Nacimientos por cada 1,000 mujeres de 15 a 19 años (Fuente: INEGI / ENADID)</p>
+            <!-- Aquí puedes incrustar tu gráfica SVG/Canvas existente -->
+            <div class="p-4 text-center border border-secondary rounded-3 bg-dark">
+              <p class="mb-2 text-info fw-semibold">Tendencia a la baja: de 77.0 (2013) a 43.5 (2026)</p>
+              <div class="progress" style="height: 24px;">
+                <div class="progress-bar bg-danger" style="width: 35%">2013: 77.0</div>
+                <div class="progress-bar bg-warning text-dark" style="width: 30%">2020: 60.0</div>
+                <div class="progress-bar bg-success" style="width: 35%">2026: 43.5</div>
+              </div>
+              <small class="text-muted d-block mt-2">*Inserta aquí tu canvas o imagen de barras de los últimos 20 años</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary">
+        <div class="col-md-5">
+          <h5 class="text-white fw-bold">Historias que previenen</h5>
+          <p class="small text-secondary">
+            La maternidad y paternidad son decisiones que requieren madurez y apoyo. Infórmate, cuídate y construye tu proyecto de vida con responsabilidad.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="text-white fw-bold">Recursos Oficiales</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="https://edomex.gob.mx/" target="_blank" class="text-decoration-none text-info">Gobierno del Estado de México</a></li>
+            <li class="mb-2"><a href="https://www.gob.mx/" target="_blank" class="text-decoration-none text-info">Gobierno de México • Salud Sexual</a></li>
+            <li><a href="contacto.html" class="text-decoration-none text-info">Orientación en nuestro plantel</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 text-md-end">
+          <span class="badge bg-success px-3 py-2 mb-2">CECyTEM Tenango del Valle</span>
+          <p class="small text-secondary mb-0">Semestre 2026 - 2027</p>
+        </div>
+      </div>
+      <div class="text-center pt-3 small text-secondary">
+        © 2026 Historias que previenen • Proyecto Escolar Comunitario. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL PARA REPRODUCIR CORTOMETRAJES -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-white border-0 rounded-4">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title" id="videoTitulo">Cortometraje</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe id="videoFrame" src="" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL INICIAR SESIÓN -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Acceso Estudiantil / Docente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Correo institucional</label>
+              <input type="email" class="form-control" placeholder="ejemplo@cecytem.mx" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Contraseña</label>
+              <input type="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-teal w-100">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + Lógica personalizada -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
+    const videoFrame = document.getElementById('videoFrame');
+    const videoTitulo = document.getElementById('videoTitulo');
+
+    function abrirVideo(titulo, url) {
+      videoTitulo.textContent = titulo;
+      videoFrame.src = url;
+      videoModal.show();
+    }
+
+    // Detener el video al cerrar el modal
+    document.getElementById('videoModal').addEventListener('hidden.bs.modal', () => {
+      videoFrame.src = '';
+    });
+  </script>
+</body>
+</html>
