@@ -1,0 +1,127 @@
+:root {
+      --primary-teal: #0f766e;
+      --primary-dark: #115e59;
+      --secondary-navy: #1e293b;
+      --accent-amber: #f59e0b;
+      --bg-light: #f8fafc;
+      --soft-mint: #ccfbf1;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: #334155;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, h4, .navbar-brand {
+      font-family: 'Poppins', sans-serif;
+      color: var(--secondary-navy);
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: var(--secondary-navy);
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-teal);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%);
+      padding: 5rem 0 4rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .badge-pec {
+      background-color: var(--soft-mint);
+      color: var(--primary-dark);
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+    }
+
+    /* Tarjetas Generales */
+    .custom-card {
+      border: none;
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .custom-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(15, 118, 110, 0.12);
+    }
+
+    /* Botones */
+    .btn-teal {
+      background-color: var(--primary-teal);
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 0.65rem 1.5rem;
+      font-weight: 600;
+      border: none;
+    }
+
+    .btn-teal:hover {
+      background-color: var(--primary-dark);
+      color: #ffffff;
+    }
+
+    /* Tarjetas de Cortometrajes */
+    .video-thumb {
+      position: relative;
+      border-radius: 16px 16px 0 0;
+      overflow: hidden;
+      background: #0f172a;
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .play-btn {
+      width: 56px;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--primary-teal);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: transform 0.2s;
+    }
+
+    .video-thumb:hover .play-btn {
+      transform: scale(1.1);
+      background: var(--accent-amber);
+      color: #fff;
+    }
+
+    /* Gráfica responsiva con CSS */
+    .chart-container {
+      background: #1e293b;
+      color: #f8fafc;
+      border-radius: 16px;
+      padding: 2rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0f172a;
+      color: #cbd5e1;
+    }

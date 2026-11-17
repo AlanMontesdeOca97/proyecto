@@ -1,0 +1,87 @@
+:root {
+      --primary-teal: #0f766e;
+      --primary-dark: #115e59;
+      --secondary-navy: #1e293b;
+      --bg-light: #f8fafc;
+      --soft-mint: #ccfbf1;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: #334155;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3, h4, h5, .navbar-brand {
+      font-family: 'Poppins', sans-serif;
+      color: var(--secondary-navy);
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: var(--secondary-navy);
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-teal);
+    }
+
+    /* Encabezado de página */
+    .page-header {
+      background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%);
+      padding: 3.5rem 0 2.5rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    /* Tarjetas */
+    .custom-card {
+      border: none;
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    /* Inputs y Botones */
+    .form-control:focus, .form-select:focus {
+      border-color: var(--primary-teal);
+      box-shadow: 0 0 0 0.2rem rgba(15, 118, 110, 0.15);
+    }
+
+    .btn-teal {
+      background-color: var(--primary-teal);
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 0.7rem 1.5rem;
+      font-weight: 600;
+      border: none;
+      transition: background-color 0.2s;
+    }
+
+    .btn-teal:hover {
+      background-color: var(--primary-dark);
+      color: #ffffff;
+    }
+
+    /* Contenedor del Mapa */
+    .map-wrapper {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0f172a;
+      color: #cbd5e1;
+      margin-top: auto;
+    }
